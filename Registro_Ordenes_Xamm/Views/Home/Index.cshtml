@@ -5,127 +5,530 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en" dir="ltr">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="~/Content/bootstrap.min.css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=TAZn0Ma7i1CFmu2XCh0keYE8c917sAtgIg6bS22flfO6GX0levs3Bt041sZD8cyx2a1MUO3LmNyzgyUS3E4Rs3nr34EdAxjC3Kd_xy-nqTgw7qMmj3rRLgxEOnTWL60z" charset="UTF-8"></script>
 
-    <link type="text/css" href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.js" charset="utf-8"></script>
     <script type="text/javascript" src="~/Scripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <title>Registro de ordenes</title>
+
 </head>
+
+
 <body>
 
     <div class="row">
-        <div>
+        <div class="s12 col white barra-superior">
             <div class="row">
                 <div class="s12 col">
                     <div class="row">
-                        <div class="elemento" id="logo" style="position:absolute; width:300px; height:100px; top: 30px; left: 60px">
-                            <img src="~/imagenes/samm.png" align="left" />
+                        <div class="s5 m4 l5 col">
+                            <img src="~/imagenes/samm.png" class="logo left tamaño" style="margin-top: 1.35rem;" />
                         </div>
-                        <div class="text-center" top: 50px;>
-                            <h4>REGISTRO DE ORDENES</h4>
+                        <div class="s4 m4 l4 col">
+                            <h4>Registro de Ordenes</h4>
                         </div>
-                        <div class="elemento" id="logo" style="position:absolute; width:300px; height:100px; top: 30px; left: 1000px">
-                            <img src="~/imagenes/bolivar.png" align="right" />
+                        <div class="s7 m3 l3 col">
+                            <img src="~/imagenes/bolivar.png" class="logo right tamaño" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="s12 m12 l12 col colorSamm" style="height: 30px;"></div>
+
+        <div class="s12 m12 l12 col colorSamm">
+            <div class="row">
+                <div class="s12 m12 l12 col margen" style="background-color: white;">
+                    <div class="row">
+                        <div class="s6 m6 l2 col divisor">
+                            <div class="row">
+                                <div class="s12 m12 l12 col">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="input-field">
+                                                <input type="search" class="validate">
+                                                <label>Busqueda</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s12 m12 l12 col">
+                                        <div class="row">
+                                            <div class="s12 col">
+                                                <a href="#" class="btn-large btnTamaño colorSamm tooltipped" id="btnOTA" data-position="top" data-tooltip="Nueva OT"><i></i>Nueva OT</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-    <div class="estilo" style="position:absolute; top: 95px; height: 1000px;">
-        <div class="estilo2" style=" position:relative; top: 35px; height: 950px;">
 
-            <div class="card" style="width: 25rem; height: 40px; position:relative; left: 20px; top: 20px;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <form class="form-inline">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                            <span class="glyphicon glyphicon-search"></span>
-                            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar"
-                                   aria-label="Search">
-
+                        <div class="s6 m6 l10 col">
+                            <div class="row ">
+                                <div class="col s12 contenido">
+                                    <div class="row">
+                                        <div class="col s12 titulo">
+                                            <div class="row" style="margin-bottom: 0!important;">
+                                                <div class="s8 col">
+                                                    <div class="row">
+                                                        <div class="s12 col">
+                                                            <h6>Oficina: EDIFICIO DEL CAFÉ KR 9 # 17 -70 PISO 2- AREA ADMINISTRATIVA</h6>
+                                                        </div>
+                                                        <div class="s12 col">
+                                                            <h6>Contacto: NARANJO ECHEVERRY CARLOS ALBERTO</h6>
+                                                        </div>
+                                                        <div class="s12 col">
+                                                            <h6>Telefono: 3138000</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="s4 col">
+                                                    <img class="imagen" src="Media/ImagenEquipo.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s12 col">
+                                            <div class="row">
+                                                <div class="s12 m12 l12 col">
+                                                    <div class="row">
+                                                        <div class="col s12">
+                                                            <ul id="tabs-swipe-demo" class="tabs">
+                                                                <li class="tab col s3"><a class="active" href="#test1">Info Básica</a></li>
+                                                                <li class="tab col s3"><a href="#test2">Datos</a></li>
+                                                                <li class="tab col s3"><a href="#test3">Plan Mantenimiento</a></li>
+                                                                <li class="tab col s3"><a href="#test4">Servicios</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div id="test1" class="col s12">
+                                                            <div class="card">
+                                                                <div class="card-content">
+                                                                    <div class="row">
+                                                                        <div class="s6 col">
+                                                                            <div class="chip">
+                                                                                Serial/Codigo:
+                                                                                <span class="right">1210</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Tipología de Oficina:
+                                                                                <span class="right">SEDE ADMINISTRATIVA</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Oficina/Componente:
+                                                                                <span class="right">EDIFICIO DEL CAFÉ AREA ADMINISTRATIVA</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Codigo ATM:
+                                                                                <span class="right">1210</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Tercero:
+                                                                                <span class="right">DAVIVENDA S.A.</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Oficina Centro de Costo:
+                                                                                <span class="right">EDIFICIO DEL CAFÉ AREA ADMINISTRATIVA</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Zona:
+                                                                                <span class="right">PEREIRA</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Ubicación:
+                                                                                <span class="right">EDIFICIO DEL CAFÉ KR 9 # 17 -70 PISO 2</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Contacto:
+                                                                                <span class="right">NARANJO ECHEVERRY CARLOS ALBERTO</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s6 col">
+                                                                            <div class="chip">
+                                                                                Telefono:
+                                                                                <span class="right">3138000</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Correo Contacto:
+                                                                                <span class="right"></span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Responsable Oficina:
+                                                                                <span class="right">NARANJO ECHEVERRY CARLOS ALBERTO</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Cargo Responsable:
+                                                                                <span class="right"></span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Telefono Responsable Oficina:
+                                                                                <span class="right">3138000</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Sucursal:
+                                                                                <span class="right">Risaralda</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Estado EQ:
+                                                                                <span class="right">Activo</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Costo:
+                                                                                <span class="right"></span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Rural/Urbano:
+                                                                                <span class="right">Urbano</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                Observaciones:
+                                                                                <span class="right"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="test2" class="col s12">
+                                                            <div class="card">
+                                                                <div class="card-content">
+                                                                    <div class="row">
+                                                                        <div class="s6 col">
+                                                                            <h6><i class=" tiny material-icons">build</i> UPS COMPONENTE: </h6>
+                                                                            <div class="chip">
+                                                                                UPS2-CAPACIDAD KVA:
+                                                                                <span class="right">6</span>
+                                                                            </div>
+                                                                            <div class="chip">
+                                                                                UPS1-CAPACIDAD KVA:
+                                                                                <span class="right">6</span>
+                                                                            </div>
+                                                                            <h6><i class=" tiny material-icons">build</i> SISTEMA AIRE ACONDICIONADO: </h6>
+                                                                            <div class="chip">
+                                                                                CAPACIDAD (TONELAS REFRIGERACION):
+                                                                                <span class="right">32,5</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s6 col">
+                                                                            <h6>DATOS GENERALES: </h6>
+                                                                            <div class="chip">
+                                                                                URBANA/RURAL:
+                                                                                <span class="right">URBANA</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="test3" class="col s12">
+                                                            <div class="row">
+                                                                <div class="s10 m10 l10 push-l1 col">
+                                                                    <ul class="collapsible popout">
+                                                                        <li>
+                                                                            <div class="collapsible-header">PLAN DE MANTENIMIENTO PLANTA ELÉCTRICA</div>
+                                                                            <div class="collapsible-body">
+                                                                                <table class="highlight centered responsive-table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th> </th>
+                                                                                            <th>Fecha/Hora</th>
+                                                                                            <th>OT</th>
+                                                                                            <th>Tempario</th>
+                                                                                            <th>Proveedor</th>
+                                                                                            <th>Fecha Garantia</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating disabled btn-small colorSamm"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>16/09/2019 00:00</td>
+                                                                                            <td>OTT-6807</td>
+                                                                                            <td>Mantenimiento preventivo Aires Acondicionado</td>
+                                                                                            <td>EQUIPEL</td>
+                                                                                            <td>25/10/2019 00:00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating disabled btn-small colorSamm"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>16/09/2019 00:00</td>
+                                                                                            <td>OTT-7181</td>
+                                                                                            <td>Mantenimiento preventivo de plantas electricas</td>
+                                                                                            <td>EQUIPEL</td>
+                                                                                            <td>25/10/2019 00:00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating btn-small colorSamm" id="btnOTE"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>16/03/2020 00:00</td>
+                                                                                            <td></td>
+                                                                                            <td>Mantenimiento preventivo de plantas electricas</td>
+                                                                                            <td>EQUIPEL</td>
+                                                                                            <td>25/10/2019 00:00</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="collapsible-header">PLAN DE MANTENIMIENTO EXTINTORES</div>
+                                                                            <div class="collapsible-body">
+                                                                                <table class="highlight centered responsive-table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th> </th>
+                                                                                            <th>Fecha/Hora</th>
+                                                                                            <th>OT</th>
+                                                                                            <th>Tempario</th>
+                                                                                            <th>Proveedor</th>
+                                                                                            <th>Fecha Garantia</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating disabled btn-small colorSamm"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>19/08/2019 00:00</td>
+                                                                                            <td>OTT-5162</td>
+                                                                                            <td>Mantenimiento Normativo Extintores</td>
+                                                                                            <td>PREINSEG</td>
+                                                                                            <td>25/10/2019 00:00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating btn-small colorSamm" id="btnOTE"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>16/09/2019 00:00</td>
+                                                                                            <td></td>
+                                                                                            <td>Mantenimiento Normativo Extintores</td>
+                                                                                            <td>PREINSEG</td>
+                                                                                            <td>25/10/2019 00:00</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="collapsible-header">PLAN DE MANTENIMIENTO UPS</div>
+                                                                            <div class="collapsible-body">
+                                                                                <table class="highlight centered responsive-table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th> </th>
+                                                                                            <th>Fecha/Hora</th>
+                                                                                            <th>OT</th>
+                                                                                            <th>Tempario</th>
+                                                                                            <th>Proveedor</th>
+                                                                                            <th>Fecha Garantia</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating disabled btn-small colorSamm"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>16/09/2019 00:00</td>
+                                                                                            <td>OTT-6706</td>
+                                                                                            <td>Mantenimiento preventivo UPS</td>
+                                                                                            <td>EQUIPEL</td>
+                                                                                            <td>31/12/2020 00:00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating btn-small colorSamm" id="btnOTE"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>16/03/2020 00:00</td>
+                                                                                            <td></td>
+                                                                                            <td>Mantenimiento preventivo UPS</td>
+                                                                                            <td>EQUIPEL</td>
+                                                                                            <td>31/12/2020 00:00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><a class="btn-floating disabled btn-small colorSamm" id="btnOTE"><i class="material-icons">mode_edit</i></a></td>
+                                                                                            <td>21/09/2020 00:00</td>
+                                                                                            <td></td>
+                                                                                            <td>Mantenimiento preventivo UPS</td>
+                                                                                            <td>EQUIPEL</td>
+                                                                                            <td>31/12/2020 00:00</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="test4" class="col s12">
+                                                            <table class="highlight centered responsive-table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th></th>
+                                                                        <th>Fecha</th>
+                                                                        <th>OTT</th>
+                                                                        <th>Tipo Servicio</th>
+                                                                        <th>Estado</th>
+                                                                        <th>Fecha Cierre</th>
+                                                                        <th>Fecha Garantia</th>
+                                                                        <th>Planes Mtto</th>
+                                                                        <th>Codigo SIAB</th>
+                                                                        <th>Proveedor</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><a class="btn-floating btn-small colorSamm" id="btnOTE"><i class="material-icons">mode_edit</i></a></td>
+                                                                        <td>29/09/2019 20:59</td>
+                                                                        <td>OTT7797</td>
+                                                                        <td>Solicitud Conserje</td>
+                                                                        <td>Lista para facturarr</td>
+                                                                        <td>30/09/2019 00:58</td>
+                                                                        <td>01/01/1900</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td>EQUIPEL INGENIERIA SAS</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a class="btn-floating btn-small colorSamm" id="btnOTE"><i class="material-icons">mode_edit</i></a></td>
+                                                                        <td>16/09/2019 08:00</td>
+                                                                        <td>OTT6296</td>
+                                                                        <td>Preventivo EM</td>
+                                                                        <td>Ingresó a SIAB</td>
+                                                                        <td>01/01/1900</td>
+                                                                        <td>19/12/2019</td>
+                                                                        <td>PLAN DE MANTENIMIENTO AIRES</td>
+                                                                        <td>3387976-2450257</td>
+                                                                        <td>AIREFRITERMICA</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><a class="btn-floating btn-small colorSamm" id="btnOTE"><i class="material-icons">mode_edit</i></a></td>
+                                                                        <td>14/10/2019 08:00</td>
+                                                                        <td>OTT8142</td>
+                                                                        <td>Preventivo EM</td>
+                                                                        <td>Gestión de proveedor</td>
+                                                                        <td>01/01/1900</td>
+                                                                        <td>01/01/1900</td>
+                                                                        <td>PLAN DE MANTENIMIENTO ASCENSOR</td>
+                                                                        <td>3425832-2479960</td>
+                                                                        <td>MITSUBISHI ELECTRIC DE COLOMBIA LTDA</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalOTA" class="modal">
+            <div class="trans">
+                <div class="modal-content">
+                    <h5>Crear OT</h5>
+                    <div class="row">
+                        <form class="col s8 m8 l8 push-l2" action="#">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="" disabled selected>Seleccione</option>
+                                        <option value="1">Alta</option>
+                                        <option value="2">Emergencia</option>
+                                        <option value="3">Media</option>
+                                        <option value="4">Baja</option>
+                                    </select>
+                                    <label>Prioridad:</label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="input_text" type="text">
+                                <label for="input_text">
+                                    Oficina Centro de Costo:
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="input_text" type="text">
+                                <label for="input_text">
+                                    Oficina/Componente:
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="input_text" type="text">
+                                <label for="input_text">
+                                    Solicitante:
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="" disabled selected>Seleccione</option>
+                                        <option value="1">ATMs</option>
+                                        <option value="2">Conserjes Coperativos</option>
+                                        <option value="3">Electromecanicos</option>
+                                        <option value="4">Locativos</option>
+                                        <option value="5">Normativo</option>
+                                    </select>
+                                    <label>Departamento:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="input_text" type="text" data-length="120">
+                                            <label for="input_text">Motivo de Servicio:</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </form>
-                    </li>
-
-                </ul>
-            </div>
-
-
-            <!-- Button trigger modal -->
-            <button type="button" style=" position:relative; left: 20px; top: 20px; top: 80px;" class="btn btn-primary btnTamaño colorSamm  btn-large" data-toggle="modal" data-target="#basicExampleModal">
-                Launch demo modal
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="vl"></div>
-
-            <hr class="hr1" width=79% align="right" size=10 style="top: -100px; position:relative;">
-
-            <hr class="hr" width=79% align="right" size=10 style="top: -10px; position:relative;">
-
-
-            <div class="row" style="position:absolute; top: 20px; height: 1000px; left: 23%;">
-                <div class="s12 col">
-                    <h6>Oficina: EDIFICIO DEL CAFÉ KR 9 # 17 -70 PISO 2- AREA ADMINISTRATIVA</h6>
-                </div>
-                <div class="s12 col">
-                    <h6>Contacto: NARANJO ECHEVERRY CARLOS ALBERTO</h6>
-                </div>
-                <div class="s12 col">
-                    <h6>Telefono: 3138000</h6>
+                <div class="modal-footer boton-checkA">
+                    <a class="modal-close donetxt btn-floating blue"><i class="material-icons">done</i></a>
+                    <a class="modal-close donetxt btn-floating blue left" id="btnClose1"><i class="material-icons">close</i></a>
                 </div>
             </div>
-
-            <div style="position:absolute; top: 180px; height: 1000px; left: 23%;">
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Profile</a>
-                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="true">Contact</a>
+        </div>
+        <div id="modalOTE" class="modal">
+            <div class="modal-content">
+                <h6>Editar Fecha Proximo Mantenimiento</h6>
+                <div class="row">
+                    <div class="col s6">
+                        <label>
+                            Fecha:
+                            <input type="text" class="datepicker">
+                        </label>
                     </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                    <div class="col s4">
+                        <label>
+                            Hora:
+                            <input type="text" class="timepicker">
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer boton-checkA">
+                    <a class="modal-close donetxt btn-floating blue"><i class="material-icons">done</i></a>
+                    <a class="modal-close donetxt btn-floating blue left" id="btnClose2"><i class="material-icons">close</i></a>
                 </div>
             </div>
-
-
-
-
 
 
         </div>
-    </div>
 
-  
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.js"
+                integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+                crossorigin="anonymous"></script>
+
+</body>
+
+
 
 </html>
