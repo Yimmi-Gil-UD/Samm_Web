@@ -105,6 +105,7 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="imagenes\bolivar.PNG" />
     <Content Include="imagenes\samm.PNG" />
+    <Content Include="Scripts\Modal.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
